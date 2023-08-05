@@ -9,11 +9,11 @@ function App() {
   const getResult = (e) => {
     e.preventDefault();
     let v = n;
-    while (v % 2 == 0) {
+    while (v % 2 === 0) {
       v = v / 2;
       console.log(v);
     }
-    setResult(((v + 1) / 2) % 2 == 0); // ? 1 : -1
+    setResult(((v + 1) / 2) % 2 === 0); // ? 1 : -1
   };
 
   return (
@@ -39,4 +39,4 @@ function App() {
 
 export default App;
 
-// f(2n) = f(n), 5(2n- 1) = (- 1)
+// f(2n) = f(n), f(2n- 1) = (-1)^n
